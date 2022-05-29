@@ -1,0 +1,67 @@
+ body{
+     background-color: rgb(180, 243, 243);
+ }
+ h1{
+text-align: center;
+}
+#tela{
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgb(0, 0, 0);
+    
+}
+#div {
+background-color: rgb(255, 255, 255); 
+width: 1000px; 
+height: 200px;
+}
+#cactus{
+    background-color: rgb(42, 77, 50); 
+    width:20px; 
+    height: 20px;
+    position: relative;
+    top: 180px;
+    left: 980px;
+    animation: 2s linear infinite mov-cactus;
+
+}
+#player{
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 150px;
+    left: 40px;
+
+}
+.animate{
+    animation: 0.3s mov-player ;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+@keyframes mov-cactus{
+    0%{
+    left: 980px;       
+    }
+    50%{
+    left: 465px;    
+    }
+    100%{
+    left: -10px;
+    }
+}
+
+@keyframes mov-player{
+    0%{
+        top: 150px;
+
+    }
+    50%{
+        top: 100px
+    }
+    0%{
+        top: 150px
+    }
+}
